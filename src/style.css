@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: no-repeat center / cover url("https://source.unsplash.com/NCxykchiVAg");
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  background-color: #333;
+}
+
+
+header {
+  background-color: #fff;
+  box-shadow: 0 0 2px #fff;
+  border: 1px solid green;
+  border-radius: 16px;
+  color: blue;
+  color: orange;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 0 3px white;
+  font-weight: bolder;
+
+}
+
+.container {
+  width: auto;
+  width: 600px;
+  border: 2px solid black;
+  padding: 0.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  background-color: #ffffffad;
+  box-shadow: 10px 0px 3px rgba(228, 221, 235, 0.084);
+  transition: 0.3s;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#input-item {
+  border: 2px solid;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: #0f0c0cd6;
+  flex: 3;
+  height: 50px;
+  box-shadow: 2px 2px 10px #000;
+}
+
+#input-item::placeholder {
+  color: black;
+}
+
+#input-item:focus {
+  border: none;
+  outline: solid green;
+  font-weight: 200;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+button {
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: rgba(0, 128, 0, 0.704);
+  color: #fff;
+
+}
+
+button:hover {
+  background-color: white;
+  color: rgba(0, 128, 0, 0.953);
+}
+
+/* Styling Javascript */
+
+#tasks-container {
+  display: none;
+  background-color: blue;
+  background-color: orange;
+  background-color: #ffffff9d;
+  margin: 2rem 0;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: #fff;
+  box-shadow: 0 0 3px;
+}
+
+.tasks {
+  background-color: #fff;
+  border: 2px solid #fff;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 3px;
+  transition: 0.2s;
+  width: 600px;
+}
+
+.task-item {
+  flex: 5;
+  list-style-type: none;
+  color: #000000b5;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.delete {
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.done {
+  background-color: orange;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+
+}
+
+.task-icon:hover {
+  background-color: white;
+  color: red;
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.time {
+  display: block;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  color: rgb(216, 30, 123);
+  text-decoration: none;
+  text-decoration-color: black
+}
+
+.task-content {
+  /* border: 3px solid blue; */
+  flex: 4;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
